@@ -1,0 +1,39 @@
+name: PVPToggle
+version: '${project.version}'
+main: com.lukeonuke.pvptoggle.PvpToggle
+api-version: '1.21'
+softdepend: [PlaceholderAPI]
+commands:
+  pvp:
+    description: "Toggle PVP individually."
+    usage: /<command>
+    permission: pvptoggle.pvp
+  pvpstatus:
+    description: "See if their own PVP is toggled."
+    usage: /<command>
+    permission: pvptoggle.pvpstatus
+    aliases:
+      - ps
+      - pstatus
+permissions :
+  pvptoggle.pvp.others:
+    description: "Toggle PVP for other players."
+    default: op
+  pvptoggle.pvp:
+    description: "Toggle their own PVP."
+    default: true
+  pvptoggle.reload:
+    description: "Reload the plugin."
+    default: op
+  pvptoggle.pvpstatus:
+    description: "See if their own PVP is toggled."
+    default: true
+  pvptoggle.pvpstatus.others:
+    description: "See the if others have their PVP toggled."
+    default: true
+  pvptoggle.bypass:
+    description: "Bypass the plugin."
+    default: false
+  pvptoggle.nocooldown:
+    description: "Bypass the cooldown."
+    default: op
