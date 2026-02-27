@@ -29,7 +29,7 @@ public class PvpService {
     private static final ConcurrentHashMap<UUID, Long> combatTagged = new ConcurrentHashMap<>();
     private static final ConcurrentHashMap<UUID, BukkitTask> combatTasks = new ConcurrentHashMap<>();
 
-    private static final int COMBAT_DURATION_SECONDS = 10;
+    private static final int COMBAT_DURATION_SECONDS = 15;
 
     public static boolean isPvpEnabled(@NotNull Player player) {
         PersistentDataContainer container = player.getPersistentDataContainer();
